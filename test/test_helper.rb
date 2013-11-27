@@ -139,6 +139,13 @@ module Geocoder
         "freegeoip_74_200_247_59"
       end
     end
+    
+    class Ipinfodb
+      private
+      def default_fixture_filename
+        "ipinfodb_74_200_247_59"
+      end
+    end
 
     class Maxmind
       private

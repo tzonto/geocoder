@@ -181,6 +181,20 @@ class ServicesTest < Test::Unit::TestCase
     result = Geocoder.search("74.200.247.59").first
     assert_equal "Plano, TX 75093, United States", result.address
   end
+  
+  # --- IpInfoDb
+  
+  def test_ipinfodb_result_on_ip_address_search
+    Geocoder.configure(:ip_lookup => :ipinfodb)
+    result = Geocoder.search("74.200.247.59").first
+    assert result.is_a?(Geocoder::Result::Ipinfodb)
+  end
+
+  def test_ipinfodb_result_components
+    Geocoder.configure(:ip_lookup => :ipinfodb)
+    result = Geocoder.search("74.200.247.59").first
+    assert_equal "PLANO 75093, UNITED STATES", result.address
+  end
 
   # --- MaxMind ---
 

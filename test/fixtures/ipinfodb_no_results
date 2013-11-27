@@ -1,0 +1,15 @@
+{
+  "Status" : "DEPRECATED",
+  "CountryCode" : "",
+  "CountryName" : "",
+  "RegionCode" : "",
+  "RegionName" : "",
+  "City" : "",
+  "ZipPostalCode" : "",
+  "Latitude" : "0",
+  "Longitude" : "0",
+  "Gmtoffset" : "0",
+  "Dstoffset" : "0",
+  "TimezoneName" : "",
+  "Isdst" : ""
+}

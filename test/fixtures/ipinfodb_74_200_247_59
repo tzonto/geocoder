@@ -1,0 +1,13 @@
+{
+	"statusCode" : "OK",
+	"statusMessage" : "",
+	"ipAddress" : "74.200.247.59",
+	"countryCode" : "US",
+	"countryName" : "UNITED STATES",
+	"regionName" : "TEXAS",
+	"cityName" : "PLANO",
+	"zipCode" : "75093",
+	"latitude" : "33.0308",
+	"longitude" : "-96.8003",
+	"timeZone" : "-05:00"
+}
