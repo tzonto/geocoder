@@ -61,7 +61,8 @@ module Geocoder
       :cache_prefix,
       :always_raise,
       :units,
-      :distances
+      :distances,
+      :ip_api_key
     ]
 
     attr_accessor :data
@@ -100,6 +101,7 @@ module Geocoder
       @data[:http_proxy]   = nil         # HTTP proxy server (user:pass@host:port)
       @data[:https_proxy]  = nil         # HTTPS proxy server (user:pass@host:port)
       @data[:api_key]      = nil         # API key for geocoding service
+      @data[:ip_api_key]   = nil
       @data[:cache]        = nil         # cache object (must respond to #[], #[]=, and #keys)
       @data[:cache_prefix] = "geocoder:" # prefix (string) to use for all cache keys
 
