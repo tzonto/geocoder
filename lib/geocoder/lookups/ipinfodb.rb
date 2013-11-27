@@ -16,8 +16,7 @@ module Geocoder::Lookup
       {
         :key => configuration.ip_api_key,
         :ip => query.sanitized_text,
-        :timezone => false,
-        :output => "json"
+        :format => "json"
       }.merge(super)
     end
 
